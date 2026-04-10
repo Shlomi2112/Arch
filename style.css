@@ -810,7 +810,7 @@ p  { color: var(--gray-700); }
   .nav-links.open { display: flex; }
   .nav-links a { color: var(--gray-700) !important; width: 100%; padding: 12px 16px; }
   .nav-links a:hover { color: var(--blue) !important; background: var(--blue-light); }
-  .nav-cta  { display: none; }
+  .nav-cta  { display: inline-flex; padding: 6px 14px; font-size: .82rem; }
   .hamburger { display: flex; }
   .nav-inner { height: 80px; }
 
