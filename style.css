@@ -812,6 +812,12 @@ p  { color: var(--gray-700); }
   .nav-links a:hover { color: var(--blue) !important; background: var(--blue-light); }
   .nav-cta  { display: inline-flex; padding: 6px 14px; font-size: .82rem; }
   .hamburger { display: flex; }
+  .hamburger span { background: var(--gray-700); }
+  .lang-toggle {
+    background: var(--gray-100);
+    color: var(--gray-700);
+    border-color: var(--gray-300);
+  }
   .nav-inner { height: 80px; }
 
   /* Hero */
