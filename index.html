@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARCH – מערכת CRM חכמה לנדל"ן</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Raleway:wght@700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== BACKGROUND LOGO WATERMARK ===== -->
+  <div class="site-logo-bg" aria-hidden="true">
+    <img src="ARCH CLEAR.png" alt="" />
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <img src="ARCH CLEAR.png" alt="ARCH" class="logo-img logo-light" />
+        <img src="ARCH CLEAR.png" alt="ARCH" class="logo-img logo-dark" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#features"   data-he="יתרונות"      data-en="Features">יתרונות</a>
+        <a href="#audience"   data-he="למי זה מתאים" data-en="Who It's For">למי זה מתאים</a>
+        <a href="#testimonials" data-he="לקוחות"     data-en="Clients">לקוחות</a>
+        <a href="#contact"    data-he="צור קשר"       data-en="Contact">צור קשר</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle">EN</button>
+        <a href="https://arch-tech.co.il/login?from=%2F" target="_blank" class="btn btn-primary nav-cta"
+           data-he="התחברות" data-en="Login">התחברות</a>
+        <button class="hamburger" id="hamburger" aria-label="תפריט">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1 data-he='העתיד של משרדי התיווך בישראל – One Stop Shop' data-en="The Future of Real Estate Agencies in Israel – One Stop Shop">העתיד של משרדי התיווך בישראל – One Stop Shop</h1>
+        <p data-he="מערכת Arch מעניקה לסוכנים שלך שליטה מכל מקום. תמלול שיחות חכם, התאמת נכסים מובנת AI ואוטומציה מלאה – פלטפורמה אחת לניהול מושלם מהשטח ועד המשרד." data-en="Arch gives your agents control from anywhere. Smart call transcription, AI-powered property matching, and full automation – one platform for perfect management from the field to the office.">מערכת Arch מעניקה לסוכנים שלך שליטה מכל מקום. תמלול שיחות חכם, התאמת נכסים מובנת AI ואוטומציה מלאה – פלטפורמה אחת לניהול מושלם מהשטח ועד המשרד.</p>
+        <div class="hero-btns">
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="dashboard-mockup">
+          <img src="homepage.PNG" alt="ARCH Dashboard" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block;" />
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8fafc"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== LOGOS / SOCIAL PROOF ===== -->
+
+  <!-- ===== VIDEOS ===== -->
+  <section class="videos" id="videos">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-dark" data-he="סרטוני תדמית" data-en="Promo Videos">סרטוני תדמית</span>
+        <h2 data-he="ראו את ARCH בפעולה" data-en="See ARCH in Action">ראו את ARCH בפעולה</h2>
+        <p data-he="גלו כיצד ARCH משנה את אופן הניהול של סוכנויות נדל&quot;ן ברחבי הארץ." data-en="Discover how ARCH is transforming the way real estate agencies operate across the country.">גלו כיצד ARCH משנה את אופן הניהול של סוכנויות נדל"ן ברחבי הארץ.</p>
+      </div>
+      <div class="videos-grid">
+        <div class="video-card">
+          <video controls preload="metadata" class="video-player">
+            <source src="assets/סרטון תדמית 1.mp4" type="video/mp4" />
+          </video>
+          <div class="video-info">
+            <p data-he="היכרות עם מערכת ARCH ויכולותיה" data-en="Introduction to the ARCH system and its capabilities">היכרות עם מערכת ARCH ויכולותיה</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-dark" data-he="יתרונות המערכת" data-en="Platform Features">יתרונות המערכת</span>
+        <h2 data-he="כל מה שצריך, במקום אחד" data-en="Everything You Need, In One Place">כל מה שצריך, במקום אחד</h2>
+        <p data-he="ARCH מספקת את כל הכלים הדרושים לניהול יעיל של לידים, נכסים, סוכנים ועסקאות — עם בינה מלאכותית שעובדת בשבילכם." data-en="ARCH provides all the tools to efficiently manage leads, properties, agents, and deals — with AI working for you.">ARCH מספקת את כל הכלים הדרושים לניהול יעיל של לידים, נכסים, סוכנים ועסקאות — עם בינה מלאכותית שעובדת בשבילכם.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 data-he="ניהול לידים חכם" data-en="Smart Lead Management">ניהול לידים חכם</h3>
+          <p data-he="קבלו, סווגו ועקבו אחר כל ליד באופן אוטומטי. הבינה המלאכותית מתעדפת לפי פוטנציאל ומזהה הזדמנויות לפני שהן פוגשות." data-en="Automatically receive, classify, and track every lead. AI prioritizes by potential and spots opportunities before they slip away.">קבלו, סווגו ועקבו אחר כל ליד באופן אוטומטי. הבינה המלאכותית מתעדפת לפי פוטנציאל ומזהה הזדמנויות לפני שהן פוגשות.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🏠</div>
+          <h3 data-he="מאגר נכסים מתקדם" data-en="Advanced Property Database">מאגר נכסים מתקדם</h3>
+          <p data-he="ניהול מלא של כל הנכסים עם תמונות, מסמכים, היסטוריה ומחירים. חיפוש חכם ומיון מהיר." data-en="Full management of all properties with photos, documents, history, and pricing. Smart search and instant sorting.">ניהול מלא של כל הנכסים עם תמונות, מסמכים, היסטוריה ומחירים. חיפוש חכם ומיון מהיר.</p>
+        </div>
+
+        <div class="feature-card feature-card--clickable" onclick="document.getElementById('agentModal').style.display='flex'">
+          <div class="feature-icon">📊</div>
+          <h3 data-he="דוחות ואנליטיקס" data-en="Reports & Analytics">דוחות ואנליטיקס</h3>
+          <p data-he="דאשבורד בזמן אמת שמציג ביצועי סוכנים, מגמות שוק ותחזיות הכנסה — כל מה שצריך לקבל החלטות נכונות." data-en="Real-time dashboard showing agent performance, market trends, and revenue forecasts — everything you need to make smart decisions.">דאשבורד בזמן אמת שמציג ביצועי סוכנים, מגמות שוק ותחזיות הכנסה — כל מה שצריך לקבל החלטות נכונות.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.14"/>
+              <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.14"/>
+            </svg>
+          </div>
+          <h3 data-he="אוטומציה חכמה" data-en="Smart Automation">אוטומציה חכמה</h3>
+          <p data-he="תזכורות, תגובות אוטומטיות ומעקב ללא עצירה. המערכת עובדת גם כשאתם לא." data-en="Reminders, automatic follow-ups, and non-stop tracking. The system works even when you don't.">תזכורות, תגובות אוטומטיות ומעקב ללא עצירה. המערכת עובדת גם כשאתם לא.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 data-he="אפליקציה למובייל" data-en="Mobile App">אפליקציה למובייל</h3>
+          <p data-he="גישה מלאה למערכת מכל מכשיר, בכל מקום. עדכונים בזמן אמת, הודעות ומעקב עסקאות — בכף ידכם." data-en="Full access from any device, anywhere. Real-time updates, notifications, and deal tracking — in your palm.">גישה מלאה למערכת מכל מכשיר, בכל מקום. עדכונים בזמן אמת, הודעות ומעקב עסקאות — בכף ידכם.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3 data-he="אינטגרציות מובנות" data-en="Built-in Integrations">אינטגרציות מובנות</h3>
+          <p data-he='חיבור ישיר ליד2 , מדלן, WinWin, וואטסאפ, מייל ועוד עשרות פלטפורמות — ללא תוספות ועלויות נסתרות.' data-en="Direct connection to Yad2, Madlan, WinWin, WhatsApp, email, and dozens more platforms — no add-ons, no hidden costs.">חיבור ישיר ליד2, מדלן, WinWin, וואטסאפ, מייל ועוד עשרות פלטפורמות — ללא תוספות ועלויות נסתרות.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AUDIENCE ===== -->
+  <section class="audience" id="audience">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-dark" data-he="למי זה מתאים" data-en="Who It's For">למי זה מתאים</span>
+        <h2 data-he="פתרון מושלם — לסוכנות ולסוכן" data-en="The Perfect Solution — For Agencies & Agents">פתרון מושלם — לסוכנות ולסוכן</h2>
+      </div>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <div class="audience-icon">🏢</div>
+          <h3 data-he="לסוכנות הנדל&quot;ן" data-en="For the Agency">לסוכנות הנדל"ן</h3>
+          <ul>
+            <li data-he="ניהול כל הסוכנים ממקום אחד" data-en="Manage all agents from one place">ניהול כל הסוכנים ממקום אחד</li>
+            <li data-he="שליטה מלאה על לידים ועסקאות" data-en="Full control over leads and deals">שליטה מלאה על לידים ועסקאות</li>
+            <li data-he="דוחות ביצועים מפורטים" data-en="Detailed performance reports">דוחות ביצועים מפורטים</li>
+            <li data-he="ניהול עמלות ותשלומים" data-en="Commission and payment management">ניהול עמלות ותשלומים</li>
+            <li data-he="מיתוג מותאם אישית" data-en="Custom branding">מיתוג מותאם אישית</li>
+            <li data-he="ניהול משרד מרחוק" data-en="Remote office management">ניהול משרד מרחוק</li>
+          </ul>
+        </div>
+        <div class="audience-divider">
+          <div class="divider-line"></div>
+          <span class="divider-label" data-he="ו" data-en="&">ו</span>
+          <div class="divider-line"></div>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">🧑‍💼</div>
+          <h3 data-he="לסוכן הנדל&quot;ן" data-en="For the Agent">לסוכן הנדל"ן</h3>
+          <ul>
+            <li data-he="ניהול לקוחות ולידים אישי" data-en="Personal client and lead management">ניהול לקוחות ולידים אישי</li>
+            <li data-he="לוח זמנים ותיאומי פגישות" data-en="Schedule and meeting coordination">לוח זמנים ותיאומי פגישות</li>
+            <li data-he="מעקב אחר כל עסקה בזמן אמת" data-en="Real-time tracking of every deal">מעקב אחר כל עסקה בזמן אמת</li>
+            <li data-he="תקשורת עם לקוחות מהמערכת" data-en="Client communication from the system">תקשורת עם לקוחות מהמערכת</li>
+            <li data-he="גישה מהמובייל בכל עת" data-en="Mobile access at any time">גישה מהמובייל בכל עת</li>
+            <li data-he="הצגת נכסים מקצועית ללקוחות" data-en="Professional property presentations">הצגת נכסים מקצועית ללקוחות</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge" data-he="מה הלקוחות אומרים" data-en="What Clients Say">מה הלקוחות אומרים</span>
+        <h2 data-he="סוכנויות שכבר הצליחו עם ARCH" data-en="Agencies Already Succeeding with ARCH">סוכנויות שכבר הצליחו עם ARCH</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p data-he="&quot;מאז שעברנו ל-ARCH, כמות הלידים שאנחנו מנהלים גדלה ב-60% — ובלי להוסיף עובד אחד. המערכת פשוט עובדת.&quot;" data-en="&quot;Since switching to ARCH, the number of leads we manage grew by 60% — without adding a single employee. The system just works.&quot;">"מאז שעברנו ל-ARCH, כמות הלידים שאנחנו מנהלים גדלה ב-60% — ובלי להוסיף עובד אחד. המערכת פשוט עובדת."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ד"ר</div>
+            <div>
+              <div class="author-name" data-he="יהלי לוי" data-en="Yahali Levy">יהלי לוי</div>
+              <div class="author-role" data-he="Link, סניף טירת הכרמל" data-en="Link, Tirat Carmel Branch">Link, סניף טירת הכרמל</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured">
+          <div class="stars">★★★★★</div>
+          <p data-he="&quot;כסוכנת עצמאית, ARCH נותנת לי את כל הכלים שסוכנות גדולה יש לה. אני חוסכת שעות בשבוע על מעקב ידני.&quot;" data-en="&quot;As an independent agent, ARCH gives me all the tools a large agency has. I save hours every week on manual tracking.&quot;">"כסוכנת עצמאית, ARCH נותנת לי את כל הכלים שסוכנות גדולה יש לה. אני חוסכת שעות בשבוע על מעקב ידני."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">מל</div>
+            <div>
+              <div class="author-name" data-he="מיכל לוי" data-en="Michal Levy">מיכל לוי</div>
+              <div class="author-role" data-he="סוכנת עצמאית, תל אביב" data-en="Independent Agent, Tel Aviv">סוכנת עצמאית, תל אביב</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p data-he="&quot;הדוחות של ARCH עזרו לנו להבין אילו סוכנים מניבים ביצועים ואיפה צריך לחזק. תוך חצי שנה סגרנו 30% יותר עסקאות.&quot;" data-en="&quot;ARCH's reports helped us understand which agents are performing and where to improve. Within six months we closed 30% more deals.&quot;">"הדוחות של ARCH עזרו לנו להבין אילו סוכנים מניבים ביצועים ואיפה צריך לחזק. תוך חצי שנה סגרנו 30% יותר עסקאות."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">אכ</div>
+            <div>
+              <div class="author-name" data-he="אלון כהן" data-en="Alon Cohen">אלון כהן</div>
+              <div class="author-role" data-he="מנהל סוכנות, חיפה" data-en="Agency Manager, Haifa">מנהל סוכנות, חיפה</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-dark" data-he="צור קשר" data-en="Contact Us">צור קשר</span>
+        <h2 data-he="רוצים לדעת יותר?" data-en="Want to Know More?">רוצים לדעת יותר?</h2>
+        <p data-he="השאירו פרטים ונחזור אליכם תוך 24 שעות." data-en="Leave your details and we'll get back to you within 24 hours.">השאירו פרטים ונחזור אליכם תוך 24 שעות.</p>
+      </div>
+      <div class="contact-wrapper">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/support@arch-tech.co.il" method="POST">
+          <input type="hidden" name="_subject" value="פנייה חדשה מאתר ARCH" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="" />
+          <div class="form-row">
+            <div class="form-group">
+              <label data-he="שם מלא" data-en="Full Name">שם מלא</label>
+              <input type="text" placeholder="" id="nameInput"
+                     data-he-placeholder="ישראל ישראלי" data-en-placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label data-he="טלפון" data-en="Phone">טלפון</label>
+              <input type="tel" placeholder="" id="phoneInput"
+                     data-he-placeholder="050-0000000" data-en-placeholder="+972-50-0000000" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-he="אימייל" data-en="Email">אימייל</label>
+            <input type="email" placeholder="" id="emailInput"
+                   data-he-placeholder="israel@example.com" data-en-placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label data-he="שם הסוכנות" data-en="Agency Name">שם הסוכנות</label>
+            <input type="text" placeholder="" id="agencyInput"
+                   data-he-placeholder="סוכנות הנדל&quot;ן שלי" data-en-placeholder="My Real Estate Agency" />
+          </div>
+          <div class="form-group">
+            <label data-he="הודעה (אופציונלי)" data-en="Message (optional)">הודעה (אופציונלי)</label>
+            <textarea rows="4" placeholder="" id="messageInput"
+                      data-he-placeholder="ספרו לנו קצת על הסוכנות שלכם..." data-en-placeholder="Tell us a bit about your agency..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-full"
+                  data-he="שלח ונחזור אליך" data-en="Send & We'll Call You">שלח ונחזור אליך</button>
+          <div class="form-success" id="formSuccess">
+            <span data-he="✅ תודה! נחזור אליך בהקדם." data-en="✅ Thank you! We'll be in touch soon.">✅ תודה! נחזור אליך בהקדם.</span>
+          </div>
+        </form>
+        <div class="contact-info">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div>
+              <div class="info-label" data-he="כתובת" data-en="Address">כתובת</div>
+              <div class="info-val" data-he="שדרות אריאל שרון, בניין לינק, טירת הכרמל" data-en="Ariel Sharon Blvd., Link Building, Tirat Carmel">שדרות אריאל שרון, בניין לינק, טירת הכרמל</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div>
+              <div class="info-label" data-he="טלפון" data-en="Phone">טלפון</div>
+              <div class="info-val">055-2500798</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">✉️</span>
+            <div>
+              <div class="info-label" data-he="אימייל" data-en="Email">אימייל</div>
+              <div class="info-val">support@arch-tech.co.il</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🕐</span>
+            <div>
+              <div class="info-label" data-he="שעות פעילות" data-en="Business Hours">שעות פעילות</div>
+              <div class="info-val" data-he="א׳–ה׳, 09:00–18:00" data-en="Sun–Thu, 09:00–18:00">א׳–ה׳, 09:00–18:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo-blue-white.png" alt="ARCH" class="footer-logo" />
+        <p data-he="מערכת CRM חכמה לנדל&quot;ן — בנויה עבור סוכנויות וסוכנים שרוצים לצמוח." data-en="Smart CRM for real estate — built for agencies and agents who want to grow.">מערכת CRM חכמה לנדל"ן — בנויה עבור סוכנויות וסוכנים שרוצים לצמוח.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 data-he="מוצר" data-en="Product">מוצר</h4>
+          <a href="#features" data-he="יתרונות" data-en="Features">יתרונות</a>
+          <a href="#how" data-he="איך זה עובד" data-en="How It Works">איך זה עובד</a>
+          <a href="#" data-he="תמחור" data-en="Pricing">תמחור</a>
+          <a href="#" data-he="אבטחה" data-en="Security">אבטחה</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-he="חברה" data-en="Company">חברה</h4>
+          <a href="#" data-he="אודות" data-en="About">אודות</a>
+          <a href="#" data-he="בלוג" data-en="Blog">בלוג</a>
+          <a href="#" data-he="קריירה" data-en="Careers">קריירה</a>
+          <a href="#contact" data-he="צור קשר" data-en="Contact">צור קשר</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-he="משפטי" data-en="Legal">משפטי</h4>
+          <a href="#" data-he="תנאי שימוש" data-en="Terms of Use">תנאי שימוש</a>
+          <a href="#" data-he="מדיניות פרטיות" data-en="Privacy Policy">מדיניות פרטיות</a>
+          <a href="#" data-he="נגישות" data-en="Accessibility">נגישות</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span data-he="© 2025 ARCH. כל הזכויות שמורות." data-en="© 2025 ARCH. All rights reserved.">© 2025 ARCH. כל הזכויות שמורות.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== AGENT PERFORMANCE MODAL ===== -->
+  <div id="agentModal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.7);align-items:center;justify-content:center;padding:20px;" onclick="if(event.target===this)this.style.display='none'">
+    <div style="background:#fff;border-radius:16px;max-width:900px;width:100%;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4);">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:20px 24px;border-bottom:1px solid #e5e7eb;">
+        <h2 style="margin:0;font-size:1.2rem;font-weight:700;color:#1a1a2e;">השוואת ביצועי סוכנים</h2>
+        <button onclick="document.getElementById('agentModal').style.display='none'" style="background:none;border:none;font-size:1.5rem;cursor:pointer;color:#6b7280;line-height:1;">&times;</button>
+      </div>
+      <img src="agent_perfotrmance.PNG" alt="השוואת ביצועי סוכנים" style="width:100%;display:block;" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
