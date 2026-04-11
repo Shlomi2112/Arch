@@ -94,49 +94,90 @@
         <h2 data-he="כל מה שצריך, במקום אחד" data-en="Everything You Need, In One Place">כל מה שצריך, במקום אחד</h2>
         <p data-he="ARCH מספקת את כל הכלים הדרושים לניהול יעיל של לידים, נכסים, סוכנים ועסקאות — עם בינה מלאכותית שעובדת בשבילכם." data-en="ARCH provides all the tools to efficiently manage leads, properties, agents, and deals — with AI working for you.">ARCH מספקת את כל הכלים הדרושים לניהול יעיל של לידים, נכסים, סוכנים ועסקאות — עם בינה מלאכותית שעובדת בשבילכם.</p>
       </div>
-      <div class="features-grid">
 
-        <div class="feature-card">
-          <div class="feature-icon">🎯</div>
-          <h3 data-he="ניהול לידים חכם" data-en="Smart Lead Management">ניהול לידים חכם</h3>
-          <p data-he="קבלו, סווגו ועקבו אחר כל ליד באופן אוטומטי. הבינה המלאכותית מתעדפת לפי פוטנציאל ומזהה הזדמנויות לפני שהן פוגשות." data-en="Automatically receive, classify, and track every lead. AI prioritizes by potential and spots opportunities before they slip away.">קבלו, סווגו ועקבו אחר כל ליד באופן אוטומטי. הבינה המלאכותית מתעדפת לפי פוטנציאל ומזהה הזדמנויות לפני שהן פוגשות.</p>
-        </div>
+      <div class="features-carousel" id="featuresCarousel">
+        <div class="carousel-slides">
 
-        <div class="feature-card">
-          <div class="feature-icon">🏠</div>
-          <h3 data-he="מאגר נכסים מתקדם" data-en="Advanced Property Database">מאגר נכסים מתקדם</h3>
-          <p data-he="ניהול מלא של כל הנכסים עם תמונות, מסמכים, היסטוריה ומחירים. חיפוש חכם ומיון מהיר." data-en="Full management of all properties with photos, documents, history, and pricing. Smart search and instant sorting.">ניהול מלא של כל הנכסים עם תמונות, מסמכים, היסטוריה ומחירים. חיפוש חכם ומיון מהיר.</p>
-        </div>
-
-        <div class="feature-card feature-card--clickable" onclick="document.getElementById('agentModal').style.display='flex'">
-          <div class="feature-icon">📊</div>
-          <h3 data-he="דוחות ואנליטיקס" data-en="Reports & Analytics">דוחות ואנליטיקס</h3>
-          <p data-he="דאשבורד בזמן אמת שמציג ביצועי סוכנים, מגמות שוק ותחזיות הכנסה — כל מה שצריך לקבל החלטות נכונות." data-en="Real-time dashboard showing agent performance, market trends, and revenue forecasts — everything you need to make smart decisions.">דאשבורד בזמן אמת שמציג ביצועי סוכנים, מגמות שוק ותחזיות הכנסה — כל מה שצריך לקבל החלטות נכונות.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.14"/>
-              <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.14"/>
-            </svg>
+          <div class="carousel-slide active">
+            <div class="slide-text">
+              <div class="feature-icon">🎯</div>
+              <h3 data-he="ניהול לידים חכם" data-en="Smart Lead Management">ניהול לידים חכם</h3>
+              <p data-he="קבלו, סווגו ועקבו אחר כל ליד באופן אוטומטי. הבינה המלאכותית מתעדפת לפי פוטנציאל ומזהה הזדמנויות לפני שהן נפספסות." data-en="Automatically receive, classify, and track every lead. AI prioritizes by potential and spots opportunities before they slip away.">קבלו, סווגו ועקבו אחר כל ליד באופן אוטומטי. הבינה המלאכותית מתעדפת לפי פוטנציאל ומזהה הזדמנויות לפני שהן נפספסות.</p>
+            </div>
+            <div class="slide-media">
+              <img src="main_dashboard.PNG" alt="ניהול לידים" />
+            </div>
           </div>
-          <h3 data-he="אוטומציה חכמה" data-en="Smart Automation">אוטומציה חכמה</h3>
-          <p data-he="תזכורות, תגובות אוטומטיות ומעקב ללא עצירה. המערכת עובדת גם כשאתם לא." data-en="Reminders, automatic follow-ups, and non-stop tracking. The system works even when you don't.">תזכורות, תגובות אוטומטיות ומעקב ללא עצירה. המערכת עובדת גם כשאתם לא.</p>
+
+          <div class="carousel-slide">
+            <div class="slide-text">
+              <div class="feature-icon">🏠</div>
+              <h3 data-he="מאגר נכסים מתקדם" data-en="Advanced Property Database">מאגר נכסים מתקדם</h3>
+              <p data-he="ניהול מלא של כל הנכסים עם תמונות, מסמכים, היסטוריה ומחירים. חיפוש חכם ומיון מהיר." data-en="Full management of all properties with photos, documents, history, and pricing. Smart search and instant sorting.">ניהול מלא של כל הנכסים עם תמונות, מסמכים, היסטוריה ומחירים. חיפוש חכם ומיון מהיר.</p>
+            </div>
+            <div class="slide-media">
+              <img src="homepage2.PNG" alt="מאגר נכסים" />
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="slide-text">
+              <div class="feature-icon">📊</div>
+              <h3 data-he="דוחות ואנליטיקס" data-en="Reports & Analytics">דוחות ואנליטיקס</h3>
+              <p data-he="דאשבורד בזמן אמת שמציג ביצועי סוכנים, מגמות שוק ותחזיות הכנסה — כל מה שצריך לקבל החלטות נכונות." data-en="Real-time dashboard showing agent performance, market trends, and revenue forecasts — everything you need to make smart decisions.">דאשבורד בזמן אמת שמציג ביצועי סוכנים, מגמות שוק ותחזיות הכנסה — כל מה שצריך לקבל החלטות נכונות.</p>
+            </div>
+            <div class="slide-media" onclick="document.getElementById('agentModal').style.display='flex'" style="cursor:pointer;" title="לחץ להגדלה">
+              <img src="usage_report.PNG" alt="דוחות ואנליטיקס" />
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="slide-text">
+              <div class="feature-icon">🤖</div>
+              <h3 data-he="אוטומציה חכמה" data-en="Smart Automation">אוטומציה חכמה</h3>
+              <p data-he="תזכורות, תגובות אוטומטיות ומעקב ללא עצירה. המערכת עובדת גם כשאתם לא." data-en="Reminders, automatic follow-ups, and non-stop tracking. The system works even when you don't.">תזכורות, תגובות אוטומטיות ומעקב ללא עצירה. המערכת עובדת גם כשאתם לא.</p>
+            </div>
+            <div class="slide-media">
+              <img src="ai_agent.PNG" alt="אוטומציה חכמה" />
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="slide-text">
+              <div class="feature-icon">📱</div>
+              <h3 data-he="אפליקציה למובייל" data-en="Mobile App">אפליקציה למובייל</h3>
+              <p data-he="גישה מלאה למערכת מכל מכשיר, בכל מקום. עדכונים בזמן אמת, הודעות ומעקב עסקאות — בכף ידכם." data-en="Full access from any device, anywhere. Real-time updates, notifications, and deal tracking — in your palm.">גישה מלאה למערכת מכל מכשיר, בכל מקום. עדכונים בזמן אמת, הודעות ומעקב עסקאות — בכף ידכם.</p>
+            </div>
+            <div class="slide-media">
+              <img src="screenshot.png" alt="אפליקציה למובייל" />
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="slide-text">
+              <div class="feature-icon">🔗</div>
+              <h3 data-he="אינטגרציות מובנות" data-en="Built-in Integrations">אינטגרציות מובנות</h3>
+              <p data-he="חיבור ישיר ליד2, מדלן, WinWin, וואטסאפ, מייל ועוד עשרות פלטפורמות — ללא תוספות ועלויות נסתרות." data-en="Direct connection to Yad2, Madlan, WinWin, WhatsApp, email, and dozens more platforms — no add-ons, no hidden costs.">חיבור ישיר ליד2, מדלן, WinWin, וואטסאפ, מייל ועוד עשרות פלטפורמות — ללא תוספות ועלויות נסתרות.</p>
+            </div>
+            <div class="slide-media">
+              <img src="agent_perfotrmance.PNG" alt="אינטגרציות מובנות" />
+            </div>
+          </div>
+
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon">📱</div>
-          <h3 data-he="אפליקציה למובייל" data-en="Mobile App">אפליקציה למובייל</h3>
-          <p data-he="גישה מלאה למערכת מכל מכשיר, בכל מקום. עדכונים בזמן אמת, הודעות ומעקב עסקאות — בכף ידכם." data-en="Full access from any device, anywhere. Real-time updates, notifications, and deal tracking — in your palm.">גישה מלאה למערכת מכל מכשיר, בכל מקום. עדכונים בזמן אמת, הודעות ומעקב עסקאות — בכף ידכם.</p>
+        <div class="carousel-nav">
+          <button class="carousel-arrow carousel-prev" id="carouselPrev">&#8249;</button>
+          <div class="carousel-dots">
+            <button class="carousel-dot active" data-slide="0"></button>
+            <button class="carousel-dot" data-slide="1"></button>
+            <button class="carousel-dot" data-slide="2"></button>
+            <button class="carousel-dot" data-slide="3"></button>
+            <button class="carousel-dot" data-slide="4"></button>
+            <button class="carousel-dot" data-slide="5"></button>
+          </div>
+          <button class="carousel-arrow carousel-next" id="carouselNext">&#8250;</button>
         </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">🔗</div>
-          <h3 data-he="אינטגרציות מובנות" data-en="Built-in Integrations">אינטגרציות מובנות</h3>
-          <p data-he='חיבור ישיר ליד2 , מדלן, WinWin, וואטסאפ, מייל ועוד עשרות פלטפורמות — ללא תוספות ועלויות נסתרות.' data-en="Direct connection to Yad2, Madlan, WinWin, WhatsApp, email, and dozens more platforms — no add-ons, no hidden costs.">חיבור ישיר ליד2, מדלן, WinWin, וואטסאפ, מייל ועוד עשרות פלטפורמות — ללא תוספות ועלויות נסתרות.</p>
-        </div>
-
       </div>
     </div>
   </section>
