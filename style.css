@@ -491,7 +491,7 @@ p  { color: var(--gray-700); }
   gap: 56px;
   align-items: center;
   padding: 48px 52px;
-  background: var(--navy);
+  background: var(--blue);
   border-radius: var(--radius-lg);
   border: 1px solid rgba(255,255,255,.08);
   box-shadow: var(--shadow-sm);
