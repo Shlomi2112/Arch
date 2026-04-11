@@ -525,10 +525,14 @@ p  { color: var(--gray-700); }
   object-fit: cover;
   max-height: 340px;
 }
+.slide-media--full {
+  display: flex;
+  justify-content: center;
+}
 .slide-media--full img {
   object-fit: contain;
-  max-height: none;
-  height: auto;
+  max-height: 280px;
+  width: auto;
 }
 
 /* ===================================================
