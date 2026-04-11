@@ -507,19 +507,9 @@ p  { color: var(--gray-700); }
   flex-direction: column;
   gap: 18px;
 }
-.feature-icon {
-  font-size: 2rem;
-  width: 56px; height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--blue-light);
-  border-radius: var(--radius-md);
-  color: var(--blue);
-  flex-shrink: 0;
-}
-.slide-text h3 { font-size: 1.4rem; color: var(--gray-900); }
-.slide-text p  { font-size: 1rem; line-height: 1.75; color: var(--gray-700); }
+.feature-icon { display: none; }
+.slide-text h3 { font-size: 1.8rem; color: var(--gray-900); }
+.slide-text p  { font-size: 1.15rem; line-height: 1.8; color: var(--gray-700); }
 
 .slide-media {
   border-radius: var(--radius-lg);
