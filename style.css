@@ -525,6 +525,11 @@ p  { color: var(--gray-700); }
   object-fit: cover;
   max-height: 340px;
 }
+.slide-media--full img {
+  object-fit: contain;
+  max-height: none;
+  height: auto;
+}
 
 /* ===================================================
    AUDIENCE
