@@ -125,7 +125,7 @@
 
   /* ---------- Scroll-reveal animation ---------- */
   const revealTargets = document.querySelectorAll(
-    '.feature-card, .audience-card, .step, .testimonial-card, .info-item'
+    '.feature-row, .audience-card, .step, .testimonial-card, .info-item'
   );
 
   const revealObserver = new IntersectionObserver(function (entries) {
@@ -139,8 +139,9 @@
 
   revealTargets.forEach(function (el, i) {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(24px)';
-    el.style.transition = 'opacity 0.5s ease ' + (i % 3 * 0.1) + 's, transform 0.5s ease ' + (i % 3 * 0.1) + 's';
+    el.style.transform = 'translateY(40px)';
+    var delay = el.classList.contains('feature-row') ? '0s' : (i % 3 * 0.1) + 's';
+    el.style.transition = 'opacity 0.6s ease ' + delay + ', transform 0.6s ease ' + delay;
     revealObserver.observe(el);
   });
 
