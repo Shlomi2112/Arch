@@ -123,41 +123,6 @@
     });
   });
 
-  /* ---------- Features Carousel ---------- */
-  (function () {
-    var carousel = document.getElementById('featuresCarousel');
-    if (!carousel) return;
-
-    var slides = carousel.querySelectorAll('.carousel-slide');
-    var dots   = carousel.querySelectorAll('.carousel-dot');
-    var current = 0;
-    var timer;
-    var INTERVAL = 4500;
-
-    function goTo(index) {
-      slides[current].classList.remove('active');
-      dots[current].classList.remove('active');
-      current = (index + slides.length) % slides.length;
-      slides[current].classList.add('active');
-      dots[current].classList.add('active');
-    }
-
-    function startTimer() { timer = setInterval(function () { goTo(current + 1); }, INTERVAL); }
-    function stopTimer()  { clearInterval(timer); }
-
-    document.getElementById('carouselNext').addEventListener('click', function () { stopTimer(); goTo(current + 1); startTimer(); });
-    document.getElementById('carouselPrev').addEventListener('click', function () { stopTimer(); goTo(current - 1); startTimer(); });
-
-    dots.forEach(function (dot, i) {
-      dot.addEventListener('click', function () { stopTimer(); goTo(i); startTimer(); });
-    });
-
-    carousel.addEventListener('mouseenter', stopTimer);
-    carousel.addEventListener('mouseleave', startTimer);
-
-    startTimer();
-  })();
-
   /* ---------- Scroll-reveal animation ---------- */
   const revealTargets = document.querySelectorAll(
     '.feature-card, .audience-card, .step, .testimonial-card, .info-item'
