@@ -525,7 +525,7 @@ p  { color: var(--gray-700); }
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
-  border: 1px solid var(--gray-100);
+  border: 3px solid var(--navy);
 }
 .slide-media img,
 .slide-media video {
