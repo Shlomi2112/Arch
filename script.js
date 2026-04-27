@@ -29,7 +29,9 @@
 
   /* ---------- Hamburger menu ---------- */
   hamburger.addEventListener('click', function () {
-    navLinks.classList.toggle('open');
+    var isOpen = navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    hamburger.setAttribute('aria-label', isOpen ? 'סגור תפריט ניווט' : 'פתח תפריט ניווט');
   });
 
   // Close menu when a link is clicked
@@ -124,8 +126,51 @@
   });
 
   /* ---------- Scroll-reveal animation ---------- */
+  /* ---------- Feature video carousel ---------- */
+  (function () {
+    var featureVideos = [
+      { src: 'assets/usage_report.mp4',he: 'דוחות ואנליטיקס',    en: 'Reports & Analytics' },
+      { src: 'assets/lidim.mp4',       he: 'ניהול לידים חכם',    en: 'Smart Lead Management' },
+      { src: 'assets/nehasim.mp4',     he: 'מאגר נכסים מתקדם',   en: 'Advanced Property Database' },
+      { src: 'assets/arch_ai.mp4',     he: 'אוטומציה חכמה',      en: 'Smart Automation' },
+      { src: 'assets/yad2.mp4',        he: 'אינטגרציות מובנות',  en: 'Built-in Integrations' }
+    ];
+    var currentVideoIndex = 0;
+    var videoEl  = document.getElementById('featureVideo');
+    var labelEl  = document.getElementById('videoLabel');
+    var dots     = document.querySelectorAll('.vpd');
+
+    function loadFeatureVideo(index) {
+      currentVideoIndex = index;
+      var item = featureVideos[index];
+      videoEl.src = item.src;
+      videoEl.load();
+      videoEl.play().catch(function () {});
+      dots.forEach(function (d, i) {
+        d.classList.toggle('active', i === index);
+        d.setAttribute('aria-pressed', i === index ? 'true' : 'false');
+      });
+      if (labelEl) {
+        labelEl.dataset.he = item.he;
+        labelEl.dataset.en = item.en;
+        labelEl.textContent = currentLang === 'en' ? item.en : item.he;
+      }
+    }
+
+    if (videoEl) {
+      videoEl.addEventListener('ended', function () {
+        loadFeatureVideo((currentVideoIndex + 1) % featureVideos.length);
+      });
+      dots.forEach(function (dot) {
+        dot.addEventListener('click', function () {
+          loadFeatureVideo(parseInt(this.dataset.index, 10));
+        });
+      });
+    }
+  }());
+
   const revealTargets = document.querySelectorAll(
-    '.feature-row, .audience-card, .step, .testimonial-card, .info-item'
+    '.fcard, .audience-card, .step, .testimonial-card, .info-item'
   );
 
   const revealObserver = new IntersectionObserver(function (entries) {
@@ -149,5 +194,48 @@
   document.head.insertAdjacentHTML('beforeend',
     '<style>.revealed { opacity: 1 !important; transform: translateY(0) !important; }</style>'
   );
+
+  /* ---------- Modal helper ---------- */
+  window.closeAgentModal = function () {
+    var modal = document.getElementById('agentModal');
+    modal.style.display = 'none';
+    if (window._modalTrigger) { window._modalTrigger.focus(); window._modalTrigger = null; }
+  };
+  var agentModal = document.getElementById('agentModal');
+  if (agentModal) {
+    agentModal.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { window.closeAgentModal(); }
+    });
+  }
+
+  /* ---------- Video dot aria-pressed update ---------- */
+  (function () {
+    var origLoad = window._loadFeatureVideo;
+  }());
+
+  /* ---------- Cookie Consent ---------- */
+  (function () {
+    var banner  = document.getElementById('cookieBanner');
+    var accept  = document.getElementById('cookieAccept');
+    var decline = document.getElementById('cookieDecline');
+    if (!banner) return;
+
+    if (!localStorage.getItem('arch_cookie_consent')) {
+      banner.hidden = false;
+      setTimeout(function () { accept && accept.focus(); }, 350);
+    }
+
+    function dismiss(choice) {
+      localStorage.setItem('arch_cookie_consent', choice);
+      banner.hidden = true;
+    }
+
+    accept  && accept.addEventListener('click',  function () { dismiss('accepted'); });
+    decline && decline.addEventListener('click', function () { dismiss('declined'); });
+
+    banner.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { dismiss('declined'); }
+    });
+  }());
 
 })();

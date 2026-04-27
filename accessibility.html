@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARCH – הצהרת נגישות</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    .legal-page { padding: 120px 0 80px; background: var(--bg); min-height: 100vh; }
+    .legal-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 56px 64px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--gray-100);
+    }
+    .legal-card h1 { font-size: 2rem; margin-bottom: 8px; color: var(--navy); }
+    .legal-meta { font-size: .85rem; color: var(--gray-500); margin-bottom: 40px; }
+    .legal-card h2 { font-size: 1.15rem; font-weight: 700; color: var(--navy); margin: 36px 0 12px; }
+    .legal-card p, .legal-card li { font-size: .97rem; line-height: 1.85; color: var(--gray-700); }
+    .legal-card ul { padding-right: 20px; display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+    .legal-card li::marker { color: var(--blue); }
+    .legal-card a { color: var(--blue); text-decoration: none; }
+    .legal-card a:hover { text-decoration: underline; }
+    .legal-divider { height: 1px; background: var(--gray-100); margin: 8px 0; }
+
+    .conformance-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #ECFDF5;
+      color: #065F46;
+      border: 1px solid #6EE7B7;
+      border-radius: var(--radius-md);
+      padding: 12px 20px;
+      font-weight: 700;
+      font-size: .95rem;
+      margin: 16px 0 24px;
+    }
+    .conformance-badge .badge-icon { font-size: 1.4rem; }
+
+    .contact-box {
+      background: var(--blue-light);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      margin-top: 12px;
+      border: 1px solid rgba(26,107,255,.15);
+    }
+    .contact-box p { margin-bottom: 6px; }
+    .contact-box strong { color: var(--navy); }
+
+    @media (max-width: 768px) {
+      .legal-card { padding: 32px 24px; }
+      .legal-card h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <img src="ARCH CLEAR.png" alt="ARCH" class="logo-img" style="height:100px;object-fit:contain;" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#features">יתרונות</a>
+        <a href="index.html#audience">למי זה מתאים</a>
+        <a href="index.html#testimonials">לקוחות</a>
+        <a href="index.html#contact">צור קשר</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://arch-tech.co.il/login?from=%2F" target="_blank" class="btn btn-primary nav-cta">התחברות</a>
+        <button class="hamburger" id="hamburger" aria-label="תפריט"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="legal-page">
+    <div class="container">
+      <div class="legal-card">
+        <h1>הצהרת נגישות</h1>
+        <p class="legal-meta">עדכון אחרון: אפריל 2025</p>
+        <div class="legal-divider"></div>
+
+        <h2>מחויבות ARCH לנגישות</h2>
+        <p>
+          חברת ARCH מאמינה שכל אדם, ללא קשר לנכות או מוגבלות, זכאי לגישה מלאה למידע ולשירות. אנו פועלים להנגיש את הפלטפורמה ואת אתר האינטרנט שלנו בהתאם לתקן הישראלי לנגישות אתרי אינטרנט (<strong>ת"י 5568</strong>) ברמת התאמה <strong>AA</strong>, המבוסס על הנחיות WCAG 2.1.
+        </p>
+
+        <div class="conformance-badge">
+          <span class="badge-icon">✅</span>
+          <span>רמת תאימות: AA — תקן ישראלי 5568 / WCAG 2.1</span>
+        </div>
+
+        <h2>מה אנו עשינו להנגשת האתר</h2>
+        <ul>
+          <li>כל התמונות כוללות טקסט חלופי (alt text) תיאורי.</li>
+          <li>ניגודיות צבעים עומדת בדרישות רמה AA (יחס של לפחות 4.5:1).</li>
+          <li>כל אלמנטי הממשק נגישים מהמקלדת בלבד, ללא צורך בעכבר.</li>
+          <li>האתר תומך בקוראי מסך מובילים (NVDA, JAWS, VoiceOver).</li>
+          <li>גודל גופנים ניתן להגדלה עד 200% ללא אובדן תוכן.</li>
+          <li>טפסי יצירת הקשר כוללים תוויות ברורות ומסרי שגיאה מובנים.</li>
+          <li>סרטוני הוידאו ניתנים להפעלה ולהשהיה על ידי המשתמש.</li>
+          <li>האתר תומך במצב ניגודיות גבוהה של מערכת ההפעלה.</li>
+          <li>כיוון קריאה מימין לשמאל (RTL) מיושם על פני כל האתר.</li>
+        </ul>
+
+        <h2>מגבלות נגישות ידועות</h2>
+        <p>למרות מאמצינו, ייתכנו מגבלות נגישות בחלקים הבאים — ואנו עובדים לפתרונן:</p>
+        <ul>
+          <li>חלק מתכני הוידאו אינם כוללים כתוביות בשלב זה — הוספת כתוביות נמצאת בפיתוח.</li>
+          <li>מסמכי PDF ישנים עשויים שלא לכלול תגיות נגישות מלאות.</li>
+        </ul>
+
+        <h2>אמצעי סיוע נוספים</h2>
+        <p>אם נתקלתם בקושי לגשת לתוכן כלשהו, ניתן:</p>
+        <ul>
+          <li>להגדיל את גודל הטקסט בדפדפן (Ctrl/Cmd + גלגל העכבר או Ctrl/Cmd +).</li>
+          <li>להפעיל מצב ניגודיות גבוהה דרך הגדרות מערכת ההפעלה.</li>
+          <li>להשתמש בתוכנת קריאת מסך התומכת ב-ARIA landmarks.</li>
+          <li>לפנות אלינו ישירות לקבלת סיוע אנושי — ראו פרטי יצירת קשר מטה.</li>
+        </ul>
+
+        <h2>ממונה נגישות</h2>
+        <div class="contact-box">
+          <p><strong>שם הממונה:</strong> צוות ARCH</p>
+          <p><strong>דוא"ל:</strong> <a href="mailto:accessibility@arch-tech.co.il">accessibility@arch-tech.co.il</a></p>
+          <p><strong>טלפון:</strong> 055-2500798</p>
+          <p><strong>כתובת:</strong> שדרות אריאל שרון, בניין לינק, טירת הכרמל</p>
+          <p style="margin-top:12px;font-size:.88rem;color:var(--gray-500);">
+            אנו מתחייבים לענות לפניות נגישות תוך 3 ימי עסקים.
+          </p>
+        </div>
+
+        <h2>הגשת פנייה בנושא נגישות</h2>
+        <p>
+          אם נתקלתם במחסום נגישות או קושי כלשהו בשימוש באתר, אנא פנו אלינו בדוא"ל
+          <a href="mailto:accessibility@arch-tech.co.il">accessibility@arch-tech.co.il</a>
+          ופרטו את הבעיה, סוג המכשיר והדפדפן שבהם השתמשתם. נשתדל לפתור כל בעיה במהירות האפשרית.
+        </p>
+        <p>
+          בנוסף, ניתן להגיש תלונה לנציב שוויון זכויות לאנשים עם מוגבלות במשרד המשפטים:
+          <a href="https://www.justice.gov.il/Subjects/DisabilityRights/" target="_blank" rel="noopener">www.justice.gov.il</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo-blue-white.png" alt="ARCH" class="footer-logo" />
+        <p>מערכת CRM חכמה לנדל"ן — בנויה עבור סוכנויות וסוכנים שרוצים לצמוח.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>מוצר</h4>
+          <a href="index.html#features">יתרונות</a>
+          <a href="index.html#contact">צור קשר</a>
+        </div>
+        <div class="footer-col">
+          <h4>משפטי</h4>
+          <a href="privacy.html">מדיניות פרטיות</a>
+          <a href="accessibility.html">נגישות</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2025 ARCH. כל הזכויות שמורות.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
